@@ -36,7 +36,7 @@ import { MongoClient, ObjectId } from 'mongodb';
 <html>
   <head>
     <title>${title} - ${movie} plain meme</title>
-    <meta property="og:title" content="${title} - ${movie} plain meme />
+    <meta property="og:title" content="${title} - ${movie} plain meme" />
     <meta property="og:image" content="${image}" />
     <meta property="og:url" content="https://hypermemia.link/post/${postId}" />
     <meta http-equiv="refresh" content="0; url=/post/${postId}" />
