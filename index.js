@@ -29,7 +29,7 @@ import { MongoClient, ObjectId } from 'mongodb';
         }
 
         const title = post.title || `Post ${postId}`;
-        const image = `https://hypermemia.link/api${post.image.thumb}`;
+        const image = `https://hypermemia.link/api${post.image.url}`;
         const movie = post.movie
         const html = `
 <!DOCTYPE html>
