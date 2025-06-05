@@ -29,7 +29,7 @@ import { MongoClient, ObjectId } from 'mongodb';
         }
 
         const title = post.title || `Post ${postId}`;
-        const image = post.image.thumb;
+        const image = `/api${post.image.thumb}`;
         const movie = post.movie
         const html = `
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ import { MongoClient, ObjectId } from 'mongodb';
     res.end('Not Found');
   });
 
-  server.listen(4005, () => {
-    console.log('OG meta server running at http://localhost:4005');
+  server.listen(4006, () => {
+    console.log('OG meta server running at http://localhost:4006');
   });
 })();
